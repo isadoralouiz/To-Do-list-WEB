@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("minhaLista", JSON.stringify(lista));
   }
 
-  function atualizarLista() {
+  function atualizarListaTask() {
     ulTaskList.innerHTML = "";
 
     lista.forEach((tarefa, index) => {
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btnRemove.addEventListener("click", () => {
         lista.splice(index, 1);
         salvarLista();
-        atualizarLista();
+        atualizarListaTask();
       });
 
       li.appendChild(btnRemove);
@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   inputTask.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-      adicionarTarefa();
+      atualizarListaTask();
     }
   });
 
-  atualizarLista();
+  atualizarListaTask();
 });
