@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do List</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .body {
+        background-color: #FFF2E0;
+        font-family: "Montserrat", sans-serif;
+        color: black;
+      }
+
+    .botao{
+        background-color: #898AC4;
+        color: black;
+        
+    }
+    .botao:hover{
+        background-color: #C0C9EE;
+    }
+
+    .input{
+        background-color: #edf0ff;
+    }
+
+</style>
+<style></style>
+
+</head>
+
+<body class="body">
+  <div class="container py-4">
+    <div class="input-group mb-3">
+      <input id="addTask" type="text" class="form-control input" placeholder="Digite uma nova tarefa" />
+      <button id="buttonAdd" class="btn btn-primary botao botao:hover botao:focus botao:active" type="button">Adicionar</button>
+    </div>
+
+    <ul id="taskList" class="list-group"></ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Receitas & Retalhos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="TodoList.js"></script>
+</body>
+
+</html>
